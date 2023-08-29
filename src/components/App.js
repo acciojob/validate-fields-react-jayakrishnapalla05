@@ -35,7 +35,7 @@ const App = () => {
         <label>Password:</label>
         <input type="password"  value={password} onChange={(e)=>setPassword(e.target.value)}/>
         {
-          error?<p id="error-msg">Both username and password are required.</p>:""
+          error?<p id="errorMessage">Both username and password are required.</p>:""
         }
         <br/>
         <button type="button" onClick={check}>Login</button>
